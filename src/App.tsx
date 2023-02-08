@@ -22,6 +22,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Calculadora from './pages/Calculadora';
 
 setupIonicReact();
 
@@ -33,7 +34,7 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/page/Inbox" />
+              <Calculadora/>
             </Route>
             <Route path="/page/:name" exact={true}>
               <Page />
